@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Temperature Convertor</title>
+    <link rel="stylesheet" href="./style.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" 
+    integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" 
+    crossorigin="anonymous">
+</head>
+<body>
+    <div class="clip-upper text-white w-100" id="form">
+        <h1>Temp Master</h1>
+
+        <label for="temperature" id="label">Enter Temperature:</label>
+    <input type="number" class="form-control w-25" id="temperature" placeholder="Enter value">
+
+
+<div class="upper w-50 d-flex justify-content-between me-5">
+
+    <div class="left">
+        <label for="from" class="ms-5 mb-2">Convert from :</label>
+        <select id="from" class="form-select ms-5" style="width: 150px;">
+            <option value="Celsius">Celsius</option>
+            <option value="Fahrenheit">Fahrenheit</option>
+            <option value="Kelvin">Kelvin</option>
+        </select>
+    </div>
+
+    <div class="right">
+        <label for="to" class="ms-5 mb-2">Convert to :</label>
+        <select id="to" class="form-select ms-5" style="width: 150px;">
+            <option value="Celsius">Celsius</option>
+            <option value="Fahrenheit">Fahrenheit</option>
+            <option value="Kelvin">Kelvin</option>
+        </select>
+    </div>
+</div>
+    <button type="button" class="btn btn-success mb-5" id="Convert"> Convert</button>
+    
+</div> 
+<div class="ul mt-5" style="width: 30rem;" id="card">
+    <h4 id="result"></h4>
+</div>
+    
+
+
+    <script src="./main.js"></script>
+</body>
+</html>

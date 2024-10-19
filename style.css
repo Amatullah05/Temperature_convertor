@@ -1,0 +1,137 @@
+*{
+    margin: 0%;
+    padding: 0%;
+    box-sizing: border-box;
+}
+body{
+    overflow: hidden;
+    background-color: rgb(255, 255, 255);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+}
+
+.clip-upper {
+    width: 100%;
+    height: 400px;
+    clip-path: polygon(0% 0%, 100% 0, 100% 51%, 50% 100%, 0 51%);
+    background-color:rgb(255, 0, 0);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+}
+.clip-upper h1{
+    text-decoration: 2px solid underline white;
+    text-underline-offset: 5px;
+    font-size: 40px;
+    text-shadow: 5px 2px 2px black;
+    letter-spacing: 3px;
+    word-spacing: 5px;
+}
+
+#label{
+    font-size: 25px;
+}
+
+#Convert{
+    width: 16%;
+    height: 10%;
+    font-size: 19px;
+    font-weight: 600;
+}
+
+@media (max-width: 700px) {
+    .clip-upper h1 {
+        font-size: 32px;
+        text-underline-offset: 4px;
+    }
+
+    #label {
+        font-size: 22px;
+    }
+
+    input#temperature {
+        width: 80%;
+    }
+
+    .upper {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .left, .right {
+        margin-bottom: 10px;
+        text-align: center;
+    }
+
+    #from, #to {
+        width: 80%;
+    }
+
+    #Convert {
+        width: 22%;
+        font-size: 18px;
+    }
+
+    .ul {
+        width: 80%;
+    }
+
+    #result {
+        font-size: 20px;
+        text-align: center;
+        margin-top: -16px;
+    }
+}
+
+
+@media (max-width: 480px) {
+    .clip-upper {
+        height: auto;
+        padding: 20px;
+    }
+
+    .clip-upper h1 {
+        font-size: 24px;
+        text-underline-offset: 3px;
+        margin-top: -15px;
+    }
+
+    #label {
+        font-size: 18px;
+    }
+
+    input#temperature {
+        width: 100%;
+    }
+
+    .left, .right {
+        margin-bottom: 10px;
+        font-size: 16px;
+
+    }
+
+    #from, #to {
+        max-width: 130px;
+    }
+
+    #Convert {
+        width: 35%;
+        height: auto;
+        font-size: 16px;
+    }
+
+    .ul {
+        width: 100%;
+    }
+
+    #result {
+        font-size: 18px;
+        text-align: center;
+        margin-top: -18px;
+    }
+}
+
+
